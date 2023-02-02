@@ -212,9 +212,15 @@
         left: 60px;
         width: calc(100% - 60px);
     }
+    .cards{
+        grid-template-columns: repeat(2,2fr);
+    }
 }
 
 @media(max-width:880px){
+    .main{
+        width: calc(100% - 60px);
+    }
     .cards{
         grid-template-columns: repeat(2,2fr);
     }
@@ -230,11 +236,14 @@
 }
 
 @media(max-width:500px){
+    .main{
+        width: calc(100% - 60px);
+    }
     .topbar{
         grid-template-columns: 1fr 5fr 0.4fr 1fr;
     }
-    .card{
-        grid-template-columns: 1fr;
+    .cards{
+        grid-template-columns: repeat(2,2fr);
     }
     .charts{
         grid-template-columns: 1fr;
@@ -243,10 +252,10 @@
         font-size: 20px;
     }
     .search{
-        width: 8%;
+        width: 75%;
     }
     .search input{
-        padding: 0 20px;
+        padding: 0 120px;
     }
     .fa-bell{
         margin-right: 5px;
