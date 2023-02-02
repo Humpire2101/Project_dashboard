@@ -219,7 +219,22 @@
 
 @media(max-width:880px){
     .main{
-        width: calc(100% - 60px);
+        width: calc(100% - 220px);
+    }
+    .topbar{
+        grid-template-columns: 1fr 1.5fr 0.4fr 1fr;
+    }
+    .logo h2{
+        font-size: 30px;
+    }
+    .search{
+        width: 100%;
+    }
+    .search input{
+        padding: 0 50px;
+    }
+    .fa-bell{
+        margin-left: 55px;
     }
     .cards{
         grid-template-columns: repeat(2,2fr);
@@ -228,19 +243,21 @@
         grid-template-columns: 1fr;
     }
     #doughnut-chart{
-        padding: 50px;
+
+        padding: 30px;
     }
     #doughnut{
+
         padding: 50px;
     }
 }
 
 @media(max-width:500px){
     .main{
-        width: calc(100% - 60px);
+        width: calc(110% - 40px);
     }
     .topbar{
-        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+        grid-template-columns: 1fr 6fr 0.4fr 1fr;
     }
     .cards{
         grid-template-columns: repeat(2,2fr);
@@ -249,16 +266,17 @@
         grid-template-columns: 1fr;
     }
     .logo h2{
-        font-size: 20px;
+        font-size: 30px;
     }
     .search{
-        width: 75%;
+        width: 80%;
+        left: 40px;
     }
     .search input{
-        padding: 0 50px;
+        padding: 0 40px;
     }
     .fa-bell{
-        margin-right: 5px;
+        margin-right: 20px;
     }
     .user{
         width: 40px;
@@ -266,5 +284,11 @@
     }
     #doughnut{
         padding: 0;
+    }
+}
+
+@media(max-width:320px){
+    .main{
+        width: calc(160% - 20px);
     }
 }
