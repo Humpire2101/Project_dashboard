@@ -203,7 +203,6 @@
 /*
 *****Responsive Start*****
 */
-
 @media(max-width:1115px){
     .sidebar{
         width: 60px;
@@ -254,33 +253,37 @@
 
 @media(max-width:500px){
     .main{
-        width: calc(110% - 40px);
+        width: calc(100% - 60px);
     }
     .topbar{
-        grid-template-columns: 1fr 6fr 0.4fr 1fr;
+        grid-template-columns: 0fr 2fr 0fr 0fr;
     }
     .cards{
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(1,2fr);
     }
     .charts{
         grid-template-columns: 1fr;
     }
     .logo h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     .search{
-        width: 80%;
-        left: 40px;
+        width: 110%;
+        left: 35px;
+        right: 0px;
     }
     .search input{
         padding: 0 40px;
     }
     .fa-bell{
-        margin-right: 20px;
+        margin-right: 8px;
     }
     .user{
         width: 40px;
         height: 40px;
+    }
+    .chart{
+        width: 100%;
     }
     #doughnut{
         padding: 0;
