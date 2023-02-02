@@ -253,7 +253,7 @@
 
 @media(max-width:500px){
     .main{
-        width: calc(100% - 60px);
+        width: calc(100% - 10px);
     }
     .topbar{
         grid-template-columns: 0.5fr 2fr 0fr 0fr;
@@ -282,7 +282,7 @@
         height: 40px;
     }
     .chart{
-        width: 100;
+        width: 100%;
     }
     #doughnut{
         padding: 0;
