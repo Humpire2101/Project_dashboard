@@ -259,6 +259,7 @@
         grid-template-columns: 0.5fr 2fr 0fr 0fr;
     }
     .cards{
+        width: 100%;
         grid-template-columns: repeat(1,2fr);
     }
     .charts{
